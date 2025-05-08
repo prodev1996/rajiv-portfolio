@@ -1,0 +1,50 @@
+/* src/app/components/Hero.module.css */
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem 4rem;
+    background: linear-gradient(135deg, #f0f4ff, #eef6fd);
+    min-height: 80vh;
+  }
+  
+  .text {
+    max-width: 50%;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4f46e5; /* indigo-600 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #374151; /* gray-700 */
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #4f46e5;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .cta:hover {
+    background: #4338ca;
+  }
+  
+  .imageWrapper {
+    position: relative; /* required for Next Image fill or fixed size */
+    width: 16rem;
+    height: 16rem;
+    flex-shrink: 0;
+  }
+  

@@ -1,7 +1,7 @@
 // src/app/components/Experience.jsx
 import styles from "./Experience.module.css";
 
-const experiences = [
+const data = [
   {
     title: "IT Support Engineer",
     company: "SA Mushroom",
@@ -40,16 +40,16 @@ export default function Experience() {
       <div className={styles.container}>
         <h2 className={styles.heading}>Experience</h2>
         <div className={styles.cards}>
-          {experiences.map((exp) => (
+          {data.map((exp) => (
             <div key={exp.title} className={styles.card}>
               <div className={styles.cardHeader}>
-                <div className={styles.role}>{exp.title}</div>
-                <div className={styles.company}>{exp.company}</div>
-                <div className={styles.period}>{exp.period}</div>
+                <h3 className={styles.role}>{exp.title}</h3>
+                <span className={styles.company}>{exp.company}</span>
+                <time className={styles.period}>{exp.period}</time>
               </div>
               <ul className={styles.bullets}>
-                {exp.bullets.map((point, idx) => (
-                  <li key={idx}>{point}</li>
+                {exp.bullets.map((b, i) => (
+                  <li key={i}>{b}</li>
                 ))}
               </ul>
             </div>

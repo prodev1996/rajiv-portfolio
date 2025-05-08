@@ -1,4 +1,4 @@
-/* Navbar.module.css */
+/* src/app/components/Navbar.module.css */
 
 .nav {
     position: fixed;
@@ -20,24 +20,27 @@
   }
   
   .navLink {
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
-    color: #1f2937; /* dark gray */
+    color: #374151; /* gray-700 */
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
   }
   
   .navLink:hover {
-    text-decoration: underline;
+    color: #4f46e5; /* indigo-600 */
   }
   
-  /* Dark-mode overrides */
+  .active {
+    color: #6366f1; /* indigo-500 */
+  }
+  
+  /* Dark‐mode overrides */
   @media (prefers-color-scheme: dark) {
     .nav {
-      background: rgba(17, 24, 39, 0.8); /* gray-900/80 */
+      background: rgba(17, 24, 39, 0.8);
     }
     .navLink {
-      color: #e5e7eb; /* gray-200 */
+      color: #e5e7eb;
     }
   }
   

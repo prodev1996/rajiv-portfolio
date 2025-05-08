@@ -1,15 +1,19 @@
 // src/app/layout.js
-import "./globals.css";    // ← this must point to src/app/globals.css
+// src/app/layout.js
 import Navbar from "./components/Navbar";
+import "./globals.css";
 
-export const metadata = { /* … */ };
+export const metadata = {
+  title: "Rajiv Bhandari – Portfolio",
+  description: "IT Support Engineer & Full-Stack Developer",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <body>
         <Navbar />
-        <main className="pt-20">{children}</main>
+        {children}
       </body>
     </html>
   );
